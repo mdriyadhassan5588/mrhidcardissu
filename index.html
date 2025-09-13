@@ -4,12 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>M.R.H Login System</title>
+  <!-- Font Awesome for Help Line Icon -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
   <style>
     body {
       font-family: 'Times New Roman', Times New Roman;
-      margin: 1;
+      margin: 0;
       background: #dfe6ed;
     }
+
+    /* Help line icon style */
+    .help-line {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background: #d63384;
+      color: white;
+      padding: 10px 12px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 0 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .help-line:hover {
+      background: #a61e63;
+    }
+
     .login-box, #formWrapper {
       max-width: 400px;
       margin: 60px auto;
@@ -105,6 +128,11 @@
   </style>
 </head>
 <body>
+
+<!-- Help Line Icon -->
+<a href="https://mdriyadhassan5588.github.io/mrhhelplinehome" class="help-line" title="Help Line">
+  <i class="fas fa-headset"></i>
+</a>
 
 <!-- Login Panel -->
 <div class="login-box" id="loginBox">
@@ -237,7 +265,6 @@
   function printIDCard() {
     window.print();
   }
-</script>
 </script>
 </body>
 </html>
